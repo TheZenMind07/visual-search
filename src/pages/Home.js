@@ -9,6 +9,9 @@ import idea from "../assets/buttons/idea.png";
 import { openModal } from "../redux/modal/ModalActions";
 import github from "../assets/other/github.png";
 import "./Home.scss";
+import Button from "@material-ui/core/Button";
+import ButtonGroup from "@material-ui/core/ButtonGroup";
+import PrimaryAppBar from "../components/appbar/PrimaryAppBar";
 
 class Home extends Component {
     componentDidMount() {}
@@ -27,12 +30,17 @@ class Home extends Component {
         return (
             <div className="home">
                 <div className="top">
-                    <div>
+                    {/* <div>
                         <h1 className="title">Pathfinding Visualizer</h1>
-                    </div>
-                    <div className="top-button-container">
-                        <div>
-                            <button
+                    </div> */}
+                    <PrimaryAppBar></PrimaryAppBar>
+                    {/* <div className="top-button-container">
+                        <ButtonGroup>
+                            <Button
+                                m={20}
+                                variant="contained"
+                                color="primary"
+                                size="large"
                                 disabled={!enableVisualizeButton}
                                 className="create-maze"
                                 onClick={() => {
@@ -40,11 +48,11 @@ class Home extends Component {
                                     createMaze();
                                 }}
                             >
-                                <span className="squirk">Create Maze</span>
-                            </button>
-                        </div>
-                        <div>
-                            <button
+                                Create Maze
+                            </Button> */}
+                    {/* <button></button> */}
+
+                    {/* <button
                                 disabled={!enableVisualizeButton || algorithms[currentAlg].type === "unweighted"}
                                 className="create-weights"
                                 onClick={() => {
@@ -52,10 +60,21 @@ class Home extends Component {
                                 }}
                             >
                                 <span className="squirk">Add Weights</span>
-                            </button>
-                        </div>
-                        <div>
-                            <button
+                            </button> */}
+                    {/* <Button
+                                variant="contained"
+                                color="primary"
+                                size="large"
+                                disabled={!enableVisualizeButton || algorithms[currentAlg].type === "unweighted"}
+                                className="create-weights"
+                                onClick={() => {
+                                    addWeight();
+                                }}
+                            >
+                                Add Weights
+                            </Button> */}
+
+                    {/* <button
                                 disabled={!enableVisualizeButton}
                                 className="clear-board"
                                 onClick={() => {
@@ -63,9 +82,21 @@ class Home extends Component {
                                 }}
                             >
                                 <span className="squirk">Clear Board</span>
-                            </button>
-                        </div>
-                    </div>
+                            </button> */}
+                    {/* <Button
+                                variant="contained"
+                                color="primary"
+                                size="large"
+                                disabled={!enableVisualizeButton}
+                                className="clear-board"
+                                onClick={() => {
+                                    createGrid();
+                                }}
+                            >
+                                Clear Board
+                            </Button>
+                        </ButtonGroup>
+                    </div> */}
                 </div>
                 <div className="middle"></div>
                 <div className="bottom">
@@ -117,6 +148,10 @@ class Home extends Component {
         );
     }
 }
+
+// Home.propTypes = {
+//     classes: PropTypes.object.isRequired
+// };
 
 const mapStateToProps = state => ({
     enableVisualizeButton: state.grid.enableVisualizeButton,

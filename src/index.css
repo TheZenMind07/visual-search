@@ -20,13 +20,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-span.squirk {
+/* span.squirk {
     font-family: "Squirk";
     font-size: 26px;
     color: #204256;
     font-weight: 400;
     letter-spacing: 3px;
-}
+} */
 
 .table td,
 .table th {

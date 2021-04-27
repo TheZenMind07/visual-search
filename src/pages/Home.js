@@ -100,11 +100,11 @@ class Home extends Component {
                 </div>
                 <div className="middle"></div>
                 <div className="bottom">
-                    <div style={{ width: "20%", height: "fit-content" }}>
+                    {/* <div style={{ width: "20%", height: "fit-content" }}>
                         {/* <div className="filter-container">
                             <Filter></Filter>
                         </div> */}
-                        {/* <div className="show-tutorial">
+                    {/* <div className="show-tutorial">
                             <button
                                 onClick={() =>
                                     modalOpen(
@@ -123,7 +123,7 @@ class Home extends Component {
                                 <img src={idea} alt="idea" className="idea-icon" /> Show Tutorial
                             </button>
                         </div> */}
-                        <div className="github">
+                    {/* <div className="github">
                             <a
                                 href="https://github.com/abhijith94/graph-visualization"
                                 target="_blank"
@@ -133,8 +133,8 @@ class Home extends Component {
                                 <br />
                                 Code
                             </a>
-                        </div>
-                    </div>
+                        </div> */}
+                    {/* </div> */}
                     <div className="grid-container-parent">
                         <div className="grid-container">
                             <Grid></Grid>

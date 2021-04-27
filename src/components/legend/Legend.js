@@ -1,19 +1,42 @@
 import React from "react";
-import cat from "../../assets/player/cat.png";
-import mouse from "../../assets/player/mouse.png";
-import wall from "../../assets/tiles/wall_red.png";
-import weight from "../../assets/tiles/weight.png";
+import player from "../../assets/player/right-arrow.png";
+import target from "../../assets/player/rec.png";
+import wall from "../../assets/tiles/fence.png";
+import weight from "../../assets/tiles/dumbbell.png";
 import "./Legend.scss";
+
+import Box from "@material-ui/core/Box";
+import Paper from "@material-ui/core/Paper";
+
+// export default function SimplePaper() {
+//     return (
+//         <Box
+//             sx={{
+//                 display: "flex",
+//                 flexWrap: "wrap",
+//                 "& > :not(style)": {
+//                     m: 1,
+//                     width: 128,
+//                     height: 128
+//                 }
+//             }}
+//         >
+//             <Paper elevation={0} />
+//             <Paper />
+//             <Paper elevation={3} />
+//         </Box>
+//     );
+// }
 
 const Legend = () => {
     return (
-        <div className="legend">
+        <Paper style={{ padding: "1px", color: "red" }} className="legend">
             <ul>
                 <li>
-                    <img src={cat} alt="player" /> - Source
+                    <img src={player} alt="player" /> - Source
                 </li>
                 <li>
-                    <img src={mouse} alt="target" /> - Destination
+                    <img src={target} alt="target" /> - Destination
                 </li>
                 <li>
                     <img src={wall} alt="wall" /> - Wall
@@ -34,7 +57,7 @@ const Legend = () => {
                     </div>
                 </li>
             </ul>
-        </div>
+        </Paper>
     );
 };
 

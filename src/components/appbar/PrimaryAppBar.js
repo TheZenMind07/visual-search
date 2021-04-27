@@ -18,6 +18,7 @@ import SimpleSelect from "./SimpleSelect";
 import GroupSizesColors from "./GroupSizesColors";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
 import Tutorial from "../../components/tutorial/Tutorial";
+import Modal from "./Modal";
 
 const useStyles = makeStyles(theme => ({
     grow: {
@@ -180,7 +181,7 @@ export default function PrimaryAppBar() {
 
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
-                        <IconButton
+                        {/* <IconButton
                             onClick={() =>
                                 modalOpen(
                                     <div
@@ -202,7 +203,8 @@ export default function PrimaryAppBar() {
                             color="inherit"
                         >
                             <LiveHelpIcon />
-                        </IconButton>
+                        </IconButton> */}
+                        <Modal></Modal>
                     </div>
                     <div className={classes.sectionMobile}>
                         <IconButton

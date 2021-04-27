@@ -1,5 +1,7 @@
 .home {
-    background-image: url("../assets/tiles/backgroundEmpty.png");
+    // background-image: url("../assets/tiles/backgroundEmpty.png");
+    // background-image: url("../assets/tiles/background.png");
+    // background-image: linear-gradient(#8490d0, white);
     width: 100%;
     height: 100%;
     position: relative;
@@ -7,7 +9,7 @@
     .top {
         width: 100%;
         height: 10%;
-        background-image: url("../assets/tiles/backgroundForest.png");
+        // background-image: url("../assets/tiles/backgroundForest.png");
         background-size: contain;
         background-repeat: repeat-x;
         position: absolute;
@@ -101,25 +103,26 @@
         //     }
         // }
     }
-    .middle {
-        width: 100%;
-        height: 4%;
-        background-image: url("../assets/tiles/platformPack_tile001.png");
-        background-size: contain;
-        background-repeat: repeat-x;
-        position: absolute;
-        top: 10%;
-        left: 0;
-    }
+    // .middle {
+    //     width: 100%;
+    //     height: 4%;
+    //     background-image: url("../assets/tiles/platformPack_tile001.png");
+    //     background-size: contain;
+    //     background-repeat: repeat-x;
+    //     position: absolute;
+    //     top: 10%;
+    //     left: 0;
+    // }
 
     .bottom {
         width: 100%;
         height: 86%;
-        background-image: url("../assets/tiles/platformPack_tile004.png");
+        // background-image: url("../assets/tiles/platformPack_tile004.png");
         background-repeat: repeat;
         position: absolute;
         top: 14%;
-        left: 0;
+        left: 1%;
+        right: 1%;
         display: flex;
         justify-content: space-between;
 
@@ -127,7 +130,7 @@
             width: 100%;
             border: 5px solid white;
             border-radius: 40px;
-            background-image: url("../assets/tiles/path_grey.png");
+            // background-image: url("../assets/tiles/path_grey.png");
             background-size: 32px;
             background-repeat: repeat;
             margin-left: 20px;
@@ -197,11 +200,11 @@
         }
 
         .grid-container-parent {
-            width: 73%;
+            width: 100%;
             padding-right: 20px;
 
             @media (max-width: 1366px) {
-                width: 76%;
+                width: 100%;
             }
         }
     }

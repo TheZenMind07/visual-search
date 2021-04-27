@@ -15,7 +15,7 @@ class App extends Component {
         //       backgroundColor: "#2f2f2f",
         //       border: "5px solid white",
         //       borderRadius: "40px",
-        //     }}
+        //     }}}
         //   >
         //     <Tutorial></Tutorial>
         //   </div>

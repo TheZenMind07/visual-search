@@ -17,6 +17,7 @@ import MoreIcon from "@material-ui/icons/MoreVert";
 import SimpleSelect from "./SimpleSelect";
 import GroupSizesColors from "./GroupSizesColors";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
+import Tutorial from "../../components/tutorial/Tutorial";
 
 const useStyles = makeStyles(theme => ({
     grow: {
@@ -180,6 +181,19 @@ export default function PrimaryAppBar() {
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
                         <IconButton
+                            onClick={() =>
+                                modalOpen(
+                                    <div
+                                        style={{
+                                            backgroundColor: "#2f2f2f",
+                                            border: "5px solid white",
+                                            borderRadius: "40px"
+                                        }}
+                                    >
+                                        <Tutorial></Tutorial>
+                                    </div>
+                                )
+                            }
                             edge="end"
                             aria-label="account of current user"
                             aria-controls={menuId}

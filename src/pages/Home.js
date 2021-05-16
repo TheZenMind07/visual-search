@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { createGrid, createMaze, addWeights } from "../redux/grid/gridActions";
 import Grid from "../components/grid/Grid";
-import Filter from "../components/filter/Filter";
-import Tutorial from "../components/tutorial/Tutorial";
+// import Filter from "../components/filter/Filter";
+// import Tutorial from "../components/tutorial/Tutorial";
 import Legend from "../components/legend/Legend";
 import idea from "../assets/buttons/idea.png";
 import { openModal } from "../redux/modal/ModalActions";
@@ -17,15 +17,8 @@ class Home extends Component {
     componentDidMount() {}
 
     render() {
-        const {
-            createGrid,
-            createMaze,
-            enableVisualizeButton,
-            addWeight,
-            algorithms,
-            currentAlg,
-            modalOpen
-        } = this.props;
+        const { createGrid, createMaze, enableVisualizeButton, addWeight, algorithms, currentAlg, modalOpen } =
+            this.props;
 
         return (
             <div className="home">

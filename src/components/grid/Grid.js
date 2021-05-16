@@ -22,7 +22,7 @@ import "./Grid.scss";
 class Grid extends Component {
     state = {
         routing: false,
-        animationWait: 0.1
+        animationWait: 0.001
     };
 
     componentDidMount() {
@@ -33,16 +33,8 @@ class Grid extends Component {
     }
 
     componentDidUpdate() {
-        const {
-            enableVisualizeButton,
-            gridCells,
-            playerPos,
-            targetPos,
-            currentAlg,
-            markVisited,
-            markSP,
-            findPath
-        } = this.props;
+        const { enableVisualizeButton, gridCells, playerPos, targetPos, currentAlg, markVisited, markSP, findPath } =
+            this.props;
 
         if (!enableVisualizeButton && !this.state.routing) {
             this.setState({ routing: true }, () => {
@@ -661,16 +653,8 @@ class Grid extends Component {
     };
 
     render() {
-        const {
-            gridCells,
-            wKeyPressed,
-            cellClick,
-            dragNDrop,
-            algorithms,
-            currentAlg,
-            onMouseDown,
-            onMouseOver
-        } = this.props;
+        const { gridCells, wKeyPressed, cellClick, dragNDrop, algorithms, currentAlg, onMouseDown, onMouseOver } =
+            this.props;
 
         return (
             <table className="table">

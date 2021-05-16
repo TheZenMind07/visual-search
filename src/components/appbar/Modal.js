@@ -70,25 +70,28 @@ export default function CustomizedDialogs() {
             </Button>
             <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
                 <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-                    Modal title
+                    Tutorial
                 </DialogTitle>
                 <DialogContent dividers>
                     <Typography gutterBottom>
-                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-                        egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                        <span className="emphasize">Left</span> click mouse to add a wall.
                     </Typography>
                     <Typography gutterBottom>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel
-                        augue laoreet rutrum faucibus dolor auctor.
+                        Hold <span className="emphasize">w</span> and click to add weights.
                     </Typography>
                     <Typography gutterBottom>
-                        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque
-                        nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                        {" "}
+                        <span className="emphasize">Hold</span> left click mouse and{" "}
+                        <span className="emphasize">drag</span> to add walls.
+                    </Typography>
+                    <Typography>
+                        You can <span className="emphasize">drag and drop </span>
+                        player and target anywhere you want.
                     </Typography>
                 </DialogContent>
                 <DialogActions>
                     <Button autoFocus onClick={handleClose} color="primary">
-                        Save changes
+                        Close
                     </Button>
                 </DialogActions>
             </Dialog>

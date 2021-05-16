@@ -17,7 +17,7 @@ import MoreIcon from "@material-ui/icons/MoreVert";
 import SimpleSelect from "./SimpleSelect";
 import GroupSizesColors from "./GroupSizesColors";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
-import Tutorial from "../../components/tutorial/Tutorial";
+// import Tutorial from "../../components/tutorial/Tutorial";
 import Modal from "./Modal";
 
 const useStyles = makeStyles(theme => ({
